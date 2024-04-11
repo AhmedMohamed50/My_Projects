@@ -12,3 +12,22 @@ function toRightCorner() {
    move();
    turnLeft();
 }
+
+// Another Solution //////////////////////////////////////////
+
+function main(){
+   moveFourTimes();
+   turnLeft();
+   moveFourTimes();
+   turnLeft();
+   turnLeft();
+   turnLeft();
+}
+
+function moveFourTimes() { 
+   move();
+   move();
+   move();
+   move();
+}
+
