@@ -40,3 +40,48 @@ function GoToRightRow() {
    move();
    turnRight();
 }
+
+
+// More Optimized Solution ////////////////////////////////////////
+/**
+ * Welcome to the Stanford Karel IDE.
+ * This is a free space for you to 
+ * write any Karel program you want.
+ **/
+function main(){
+   TwoRows();
+   TwoRows();
+   DiagonalBeeper();
+   DiagonalBeeper();
+   putBeeper();
+}
+
+function DiagonalBeeper() { 
+   putBeeper();
+   move();
+   move();
+}
+
+function GoToLeftRow() {
+   putBeeper();
+   turnLeft();
+   move();
+   turnLeft();
+   move();
+}
+
+function GoToRightRow() {
+   putBeeper();
+   move();
+   turnRight();
+   move();
+   turnRight();
+}
+
+function TwoRows() {
+   DiagonalBeeper();
+   DiagonalBeeper();
+   GoToLeftRow();
+   DiagonalBeeper();
+   GoToRightRow();
+}
