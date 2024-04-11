@@ -1,0 +1,16 @@
+function main(){
+   DiagonalBeeper();
+   DiagonalBeeper();
+   DiagonalBeeper();
+   DiagonalBeeper();
+   DiagonalBeeper();
+}
+
+function DiagonalBeeper() { 
+   putBeeper();
+   move();
+   turnLeft();
+   move();
+   turnRight();
+}
+
