@@ -1,0 +1,14 @@
+function main(){
+   toRightCorner();
+   toRightCorner();
+   turnLeft();
+   turnLeft();
+}
+
+function toRightCorner() { 
+   move();
+   move();
+   move();
+   move();
+   turnLeft();
+}
